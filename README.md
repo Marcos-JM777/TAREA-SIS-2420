@@ -61,48 +61,41 @@ pyinstaller --onefile --windowed index.py
 
 El archivo .exe resultante se generará dentro de la carpeta dist y podrá ejecutarse sin necesidad de abrir Visual Studio Code.
 
-🧠 Funcionalidades Principales
+## 🧠 Funcionalidades Principales
 
-🗃️ Módulo de Inventario
+### 🗃️ Módulo de Inventario
+- Registro de productos con nombre, precio, cantidad, proveedor y stock disponible.
+- Edición y actualización de datos en tiempo real.
+- Eliminación segura de productos obsoletos.
+- Visualización detallada de los productos registrados.
 
-· Registro de productos con nombre, precio, cantidad, proveedor y stock disponible.
-· Edición y actualización de datos en tiempo real.
-· Eliminación segura de productos obsoletos.
-· Visualización detallada de los productos registrados.
+### 💵 Módulo de Ventas
+- Selección de productos desde el inventario.
+- Cálculo automático del total de la venta.
+- Registro de transacciones y generación de facturas en PDF.
+- Almacenamiento de cada venta en la base de datos `database.db`.
 
-💵 Módulo de Ventas
+### 🧰 Otras características
+- Interfaz gráfica desarrollada con **Tkinter**, con íconos y temas visuales personalizados.
+- Manejo de imágenes mediante la librería **Pillow**.
+- Integración de base de datos **SQLite3** para almacenar la información de manera persistente.
+- Compatible con la conversión a ejecutable `.exe` mediante **PyInstaller**.
 
-· Selección de productos desde el inventario.
-· Cálculo automático del total de la venta.
-· Registro de transacciones y generación de facturas en PDF.
-· Almacenamiento de cada venta en la base de datos database.db.
-
-🧰 Otras características
-
-· Interfaz gráfica desarrollada con Tkinter, con íconos y temas visuales personalizados.
-· Manejo de imágenes mediante la librería Pillow.
-· Integración de base de datos SQLite3 para almacenar la información de manera persistente.
-· Compatible con la conversión a ejecutable .exe mediante PyInstaller.
-
-🗂️ Base de Datos
-
-La base de datos utilizada (database.db) fue diseñada y gestionada con DB Browser for SQLite.
+## 🗂️ Base de Datos
+La base de datos utilizada (`database.db`) fue diseñada y gestionada con **DB Browser for SQLite**.  
 Contiene las siguientes tablas principales:
+- `productos` → información de inventario.
+- `ventas` → registro de facturas generadas.
 
-· productos → información de inventario.
-· ventas → registro de facturas generadas.
+## 🧑‍💻 Autor
+- **Nombre:** Marcos J. M.
+- **Materia:** SIS-2420 — Programación
+- **Lenguaje:** Python
+- **Entorno:** Visual Studio Code
+- **Gestión:** II/2025
 
-🧑‍💻 Autor
-
-· Nombre: Marcos J. M.
-· Materia: SIS-2420 — Programación
-· Lenguaje: Python
-· Entorno: Visual Studio Code
-· Gestión: II/2025
-
-📄 Licencia
-
-Proyecto académico sin fines comerciales.
+## 📄 Licencia
+Proyecto académico sin fines comerciales.  
 Uso libre con fines educativos o de práctica.
 
-Este proyecto refleja la aplicación práctica de Python en la creación de sistemas de inventario con interfaz gráfica, manejo de bases de datos y generación automática de documentos.
+**Este proyecto refleja la aplicación práctica de Python en la creación de sistemas de inventario con interfaz gráfica, manejo de bases de datos y generación automática de documentos.**
